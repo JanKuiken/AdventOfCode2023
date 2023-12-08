@@ -79,3 +79,10 @@ def matrix_neighbours(matrix_point,
 
     return set([MatrixPoint(res[0], res[1]) for res in results])
 
+def numbers_from_str(s):
+    """
+    Returns a list of integers from a string 
+    """
+    return [int(i) for i in s.split()]
+
+
