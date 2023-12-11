@@ -1,10 +1,11 @@
+"""
+Advent Of Code 2023 --- Day 4: Scratchcards ---
+"""
 
-import sys
-sys.path.append("..") 
 import aoc_lib as aoc
 
 # parse the file
-lines = aoc.lines_from_file('input.txt')
+lines = aoc.lines_from_file('input_04.txt')
 cards = {}
 for line in lines:
     part_1, part_2 = line.split(':')

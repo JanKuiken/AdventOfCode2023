@@ -1,12 +1,13 @@
+"""
+Advent Of Code 2023 --- Day 3: Gear Ratios ---
+"""
 
-import sys
-sys.path.append("..") 
 import aoc_lib as aoc
 
 from collections import namedtuple
 from string import digits
 
-matrix = aoc.matrix_from_file('input.txt')
+matrix = aoc.matrix_from_file('input_03.txt')
 
 aoc.print_matrix(matrix)
 

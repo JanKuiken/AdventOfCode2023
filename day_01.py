@@ -1,9 +1,10 @@
+"""
+Advent Of Code 2023 --- Day 1: Trebuchet?! ---
+"""
 
-import sys
-sys.path.append("..") 
 import aoc_lib as aoc
 
-lines = aoc.lines_from_file('input.txt')
+lines = aoc.lines_from_file('input_01.txt')
 
 from string import digits
 

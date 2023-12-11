@@ -1,9 +1,10 @@
+"""
+Advent Of Code 2023 --- Day 2: Cube Conundrum ---
+"""
 
-import sys
-sys.path.append("..") 
 import aoc_lib as aoc
 
-lines = aoc.lines_from_file('input.txt')
+lines = aoc.lines_from_file('input_02.txt')
 
 # parse the file
 games = {}  # key = game ID, value list of (r,g,b) tuples

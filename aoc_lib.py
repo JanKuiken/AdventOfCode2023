@@ -85,4 +85,18 @@ def numbers_from_str(s):
     """
     return [int(i) for i in s.split()]
 
+def split_on_empty_string(list_of_str):
+    """
+    splits a list of strings in a list of list of strings by empty strings
+    """
+    retval = [[]]
+    for line in list_of_str:
+        if line == '':
+            retval.append([])
+        else:
+            retval[-1].append(line)
+    return retval
+
+
+
 
