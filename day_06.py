@@ -42,10 +42,11 @@ record_distance = 208141212571410
 def sailing_distance_minus_record(time):
     return float(float(time) * float(game_time - time) - float(record_distance))
 
-
+# beetje gek doen, Newton's method toegevoegd aan de AoC lib.
 low  = ceil (aoc.simple_newton_zero_finding(sailing_distance_minus_record, game_time * 0.25, epsilon=.1, dx=.1))
 high = floor(aoc.simple_newton_zero_finding(sailing_distance_minus_record, game_time * 0.75, epsilon=.1, dx=.1))
-# hmm needed some tuning of epsilon and dx... (dunno why)
+
+# hmm needed some tuning of epsilon and dx... (dunno why, float precision?...)
 
 print('Solution part 2:', 1 + high - low)
 
