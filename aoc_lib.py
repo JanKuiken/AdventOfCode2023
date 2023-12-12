@@ -5,7 +5,6 @@ Some functions that are multiple times used in AoC 2023
 import pprint
 from collections import namedtuple
 
-
 def lines_from_file(file_name):
     """
     Returns a list of lines (with trailing \n removed)
@@ -97,6 +96,16 @@ def split_on_empty_string(list_of_str):
             retval[-1].append(line)
     return retval
 
-
+def simple_newton_zero_finding(f, start_x, epsilon = 0.001, dx=0.001):
+    """
+    pretty naive implementation of Newton's method (do no expect wonders...)
+    """
+    x = start_x
+    while True:
+        y = f(x)
+        if abs(y) < epsilon:
+            return x
+        dy = (f(x+dx) - f(x)) / dx
+        x  = x - y / dy
 
 
